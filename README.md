@@ -1,44 +1,53 @@
-# Breast Cancer Detection using K-Nearest Neighbors (KNN)
+# Breast Cancer Detection Analysis
 
-A machine learning project that implements a K-Nearest Neighbors classifier to detect breast cancer using the Wisconsin Breast Cancer Dataset.
+A comprehensive machine learning analysis of the Wisconsin Breast Cancer dataset using various visualization techniques and statistical methods.
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.0%2B-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+## Project Overview
 
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Dataset](#dataset)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Results](#results)
-- [Visualizations](#visualizations)
-- [Dependencies](#dependencies)
-- [Contributing](#contributing)
-- [License](#license)
+This project analyzes breast cancer data to distinguish between malignant and benign tumors using feature analysis, correlation studies, and machine learning insights.
 
-## 📖 Overview
+## Key Visualizations
 
-This project implements a K-Nearest Neighbors (KNN) algorithm to classify breast cancer tumors as malignant or benign. The model is trained on the Wisconsin Breast Cancer Dataset and includes comprehensive data analysis, feature engineering, and visualization components.
+The analysis generates a comprehensive dashboard with four key visualizations:
 
-## 📊 Dataset
+![Breast Cancer Analysis](breast_cancer_analysis.png)
 
-The project uses the **Wisconsin Breast Cancer Dataset** which contains:
-- 569 instances with 30 features each
-- Features computed from digitized images of fine needle aspirates (FNA) of breast masses
-- Target variable: Diagnosis (Malignant/Benign)
+### 1. Diagnosis Distribution
+- Pie chart showing the proportion of benign vs malignant cases
+- Color-coded for easy interpretation (green = benign, red = malignant)
 
-Key features include:
-- Radius
-- Texture
-- Perimeter
-- Area
-- Smoothness
-- Compactness
-- Concavity
-- Symmetry
-- Fractal dimension
+### 2. Radius Mean Distribution
+- Histogram comparing radius mean values between benign and malignant cases
+- Shows clear separation between the two classes
 
-## 📁 Project Structure
+### 3. Feature Correlation Heatmap
+- Displays correlations between the top 8 most important features
+- Uses a red-blue color scale with correlation values
+
+### 4. Feature Importance
+- Bar chart showing the top 10 most important features as determined by Random Forest
+- Helps identify which features contribute most to classification
+
+## Dataset
+
+The Wisconsin Breast Cancer Dataset contains:
+- 569 samples with 30 features each
+- Features computed from digitized images of fine needle aspirates
+- Target variable: diagnosis (M = malignant, B = benign)
+
+## Code Features
+
+- Data loading and preprocessing
+- Comprehensive visualization suite
+- Statistical analysis of key features
+- Feature importance ranking using Random Forest
+- Correlation analysis between features
+
+## Requirements
+
+```bash
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
